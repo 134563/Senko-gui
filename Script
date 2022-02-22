@@ -1,0 +1,238 @@
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Senko Gui Loading...";
+	Duration = 5;
+})
+
+wait(5)
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Senko Gui Loaded!";
+	Text = "Enjoy!"; 
+	Duration = 5;
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local FrameMain = Instance.new("Frame")
+local Frame = Instance.new("ImageLabel")
+local UIGradient = Instance.new("UIGradient")
+local TextLabel = Instance.new("TextLabel")
+local TabMadcity = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local Tab1 = Instance.new("TextButton")
+local Tab2 = Instance.new("TextButton")
+local Credits = Instance.new("TextButton")
+local TabFMRorAFD = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local TabCredit = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
+local UIGradient_2 = Instance.new("UIGradient")
+
+ScreenGui.Parent = game.CoreGui
+
+FrameMain.Name = "FrameMain"
+FrameMain.Parent = ScreenGui
+FrameMain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameMain.BackgroundTransparency = 1.000
+FrameMain.Size = UDim2.new(0, 99, 0, 102)
+
+Frame.Name = "Frame"
+Frame.Parent = FrameMain
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.136606187, 0, 0.541871965, 0)
+Frame.Size = UDim2.new(0, 496, 0, 266)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
+Frame.Active = true
+Frame.Draggable = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(150, 2, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 221))}
+UIGradient.Rotation = 20
+UIGradient.Parent = Frame
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(0, 496, 0, 50)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "SENKO GUI "
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 29.000
+
+TabMadcity.Name = "TabMadcity"
+TabMadcity.Parent = Frame
+TabMadcity.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TabMadcity.BorderSizePixel = 0
+TabMadcity.Position = UDim2.new(0.0665322617, 0, 0.187969923, 0)
+TabMadcity.Size = UDim2.new(0, 306, 0, 199)
+
+TextButton.Parent = TabMadcity
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0.055555556, 0, 0.0351758786, 0)
+TextButton.Size = UDim2.new(0, 147, 0, 50)
+TextButton.Font = Enum.Font.SciFi
+TextButton.Text = "Aimbot"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 17.000
+
+Tab1.Name = "Tab 1"
+Tab1.Parent = Frame
+Tab1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab1.BorderSizePixel = 0
+Tab1.Position = UDim2.new(0.713709712, 0, 0.187969923, 0)
+Tab1.Size = UDim2.new(0, 124, 0, 50)
+Tab1.Font = Enum.Font.SciFi
+Tab1.Text = "Mad city"
+Tab1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Tab1.TextSize = 19.000
+
+Tab2.Name = "Tab 2"
+Tab2.Parent = Frame
+Tab2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab2.BorderSizePixel = 0
+Tab2.Position = UDim2.new(0.713709712, 0, 0.466165394, 0)
+Tab2.Size = UDim2.new(0, 124, 0, 50)
+Tab2.Font = Enum.Font.SciFi
+Tab2.Text = "FMR / AFD"
+Tab2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Tab2.TextSize = 19.000
+
+Credits.Name = "Credits"
+Credits.Parent = Frame
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0.713709712, 0, 0.748120308, 0)
+Credits.Size = UDim2.new(0, 124, 0, 50)
+Credits.Font = Enum.Font.SciFi
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits.TextSize = 19.000
+
+TabFMRorAFD.Name = "TabFMRorAFD"
+TabFMRorAFD.Parent = Frame
+TabFMRorAFD.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TabFMRorAFD.BorderSizePixel = 0
+TabFMRorAFD.Position = UDim2.new(0.0665322542, 0, 0.187969863, 0)
+TabFMRorAFD.Size = UDim2.new(0, 307, 0, 199)
+
+TextBox.Parent = TabFMRorAFD
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.Position = UDim2.new(0.0488599353, 0, 0.0502512567, 0)
+TextBox.Size = UDim2.new(0, 153, 0, 50)
+TextBox.Font = Enum.Font.SciFi
+TextBox.Text = "All Gamepasses"
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+
+TabCredit.Name = "TabCredit"
+TabCredit.Parent = Frame
+TabCredit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TabCredit.BorderSizePixel = 0
+TabCredit.Position = UDim2.new(0.0665322542, 0, 0.184210479, 0)
+TabCredit.Size = UDim2.new(0, 306, 0, 199)
+
+TextLabel_2.Parent = TabCredit
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Size = UDim2.new(0, 306, 0, 23)
+TextLabel_2.Font = Enum.Font.SciFi
+TextLabel_2.Text = "Gui Made by GoldGowd#0985"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 20.000
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_2.TextYAlignment = Enum.TextYAlignment.Top
+
+Close.Name = "Close"
+Close.Parent = FrameMain
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(4.60120964, 0, 0.575037599, 0)
+Close.Size = UDim2.new(0, 40, 0, 42)
+Close.Font = Enum.Font.SciFi
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 32.000
+
+Open.Name = "Open"
+Open.Parent = FrameMain
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(7.76104832, 0, 5.28586483, 0)
+Open.Size = UDim2.new(0, 122, 0, 50)
+Open.Font = Enum.Font.SciFi
+Open.Text = "OPEN"
+Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open.TextSize = 24.000
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(143, 5, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 11, 251))}
+UIGradient_2.Parent = Open
+
+local function REOGDN_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new("LocalScript", TextButton)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet(('https://pastebin.com/raw/xiaqAquM'),true))()
+	end)
+end
+coroutine.wrap(REOGDN_fake_script)()
+local function HSQNWOI_fake_script() -- Tab1.LocalScript 
+	local script = Instance.new("LocalScript", Tab1)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.TabFMRorAFD.Visible = false
+		script.Parent.Parent.TabCredit.Visible = false
+		script.Parent.Parent.TabMadcity.Visible = true
+	end)
+end
+coroutine.wrap(HSQNWOI_fake_script)()
+local function EUETIEZ_fake_script() -- Tab2.LocalScript 
+	local script = Instance.new("LocalScript", Tab2)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.TabFMRorAFD.Visible = true
+		script.Parent.Parent.TabCredit.Visible = false
+		script.Parent.Parent.TabMadcity.Visible = false
+	end)
+end
+coroutine.wrap(EUETIEZ_fake_script)()
+local function DOVBSD_fake_script() -- Credits.LocalScript 
+	local script = Instance.new("LocalScript", Credits)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.TabFMRorAFD.Visible = false
+		script.Parent.Parent.TabCredit.Visible = true
+		script.Parent.Parent.TabMadcity.Visible = false
+	end)
+end
+coroutine.wrap(DOVBSD_fake_script)()
+local function NJPGHD_fake_script() -- TextBox.LocalScript 
+	local script = Instance.new("LocalScript", TextBox)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Players").LocalPlayer.userId = "23467579"
+	end)
+end
+coroutine.wrap(NJPGHD_fake_script)()
+local function DPBMF_fake_script() -- Close.LocalScript 
+	local script = Instance.new("LocalScript", Close)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Frame.Visible = false
+		script.Parent.Parent.Close.Visible = false
+	end)
+end
+coroutine.wrap(DPBMF_fake_script)()
+local function FIWXZL_fake_script() -- Open.LocalScript 
+	local script = Instance.new("LocalScript", Open)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Frame.Visible = true
+		script.Parent.Parent.Close.Visible = true
+	end)
+end
+coroutine.wrap(FIWXZL_fake_script)()
