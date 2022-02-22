@@ -31,7 +31,7 @@ local UIGradient_2 = Instance.new("UIGradient")
 
 --Properties:
 
-ScreenGui.Parent = game.Workspace
+ScreenGui.Parent = game.CoreGui
 
 Frame.Name = "Frame"
 Frame.Parent = ScreenGui
