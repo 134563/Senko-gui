@@ -1,15 +1,15 @@
 wait(1.2)
 game.StarterGui:SetCore("SendNotification", {
-Title = "Senko Gui loading...";
-Text = "Its loading...";
-Duration = 5;
+	Title = "Senko Gui loading...";
+	Text = "Its loading...";
+	Duration = 5;
 })
 
 wait(5)
 game.StarterGui:SetCore("SendNotification", {
-Title = "Senko Gui is Loaded";
-Text = "Enjoy!";
-Duration = 5;
+	Title = "Senko Gui is Loaded";
+	Text = "Enjoy!";
+	Duration = 5;
 })
 
 -- Instances:
@@ -31,7 +31,7 @@ local UIGradient_2 = Instance.new("UIGradient")
 
 --Properties:
 
-ScreenGui.Parent = game.CoreGui
+ScreenGui.Parent = game.Workspace
 
 Frame.Name = "Frame"
 Frame.Parent = ScreenGui
@@ -153,43 +153,41 @@ UIGradient_2.Parent = Open
 
 -- Scripts:
 
-local function ZTCSM_fake_script() -- TextButton.LocalScript 
+local function SIFDDUY_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet(('https://pastebin.com/raw/xiaqAquM'),true))()
 	end)
 end
-coroutine.wrap(ZTCSM_fake_script)()
-local function CWHA_fake_script() -- Tab1.LocalScript 
+coroutine.wrap(SIFDDUY_fake_script)()
+local function KYLLYZ_fake_script() -- Tab1.LocalScript 
 	local script = Instance.new('LocalScript', Tab1)
 
 	script.Parent.MouseButton1Down:connect(function()
-		script.Parent.Parent.TabFMRorAFD.Visible = false
 		script.Parent.Parent.TabCredit.Visible = false
 		script.Parent.Parent.TabMadcity.Visible = true
 	end)
 end
-coroutine.wrap(CWHA_fake_script)()
-local function ZEIAQQ_fake_script() -- Credits.LocalScript 
+coroutine.wrap(KYLLYZ_fake_script)()
+local function XQCY_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	script.Parent.MouseButton1Down:connect(function()
-		script.Parent.Parent.TabFMRorAFD.Visible = false
 		script.Parent.Parent.TabCredit.Visible = true
 		script.Parent.Parent.TabMadcity.Visible = false
 	end)
 end
-coroutine.wrap(ZEIAQQ_fake_script)()
-local function MULBA_fake_script() -- Close.LocalScript 
+coroutine.wrap(XQCY_fake_script)()
+local function KQKH_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(MULBA_fake_script)()
-local function VRPDO_fake_script() -- Open.LocalScript 
+coroutine.wrap(KQKH_fake_script)()
+local function CONZG_fake_script() -- Open.LocalScript 
 	local script = Instance.new('LocalScript', Open)
 
 	local frame = script.Parent.Parent.Frame
@@ -202,4 +200,4 @@ local function VRPDO_fake_script() -- Open.LocalScript
 	end)
 	
 end
-coroutine.wrap(VRPDO_fake_script)()
+coroutine.wrap(CONZG_fake_script)()
