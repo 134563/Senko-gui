@@ -1,16 +1,3 @@
-game.StarterGui:SetCore("SendNotification", {
-	Title = "Senko Gui Loading...";
-	Duration = 5;
-})
-
-wait(5)
-game.StarterGui:SetCore("SendNotification", {
-	Title = "Senko Gui Loaded!";
-	Text = "Enjoy!"; 
-	Duration = 5;
-
--- Instances:
-
 local ScreenGui = Instance.new("ScreenGui")
 local FrameMain = Instance.new("Frame")
 local Frame = Instance.new("ImageLabel")
@@ -29,12 +16,16 @@ local Close = Instance.new("TextButton")
 local Open = Instance.new("TextButton")
 local UIGradient_2 = Instance.new("UIGradient")
 
+--Properties:
+
 ScreenGui.Parent = game.CoreGui
 
 FrameMain.Name = "FrameMain"
 FrameMain.Parent = ScreenGui
 FrameMain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 FrameMain.BackgroundTransparency = 1.000
+FrameMain.BorderSizePixel = 0
+FrameMain.Position = UDim2.new(0.203842059, 0, 0.259441704, 0)
 FrameMain.Size = UDim2.new(0, 99, 0, 102)
 
 Frame.Name = "Frame"
@@ -47,8 +38,6 @@ Frame.Image = "rbxassetid://3570695787"
 Frame.ScaleType = Enum.ScaleType.Slice
 Frame.SliceCenter = Rect.new(100, 100, 100, 100)
 Frame.SliceScale = 0.120
-Frame.Active = true
-Frame.Draggable = true
 
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(150, 2, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 221))}
 UIGradient.Rotation = 20
@@ -162,7 +151,7 @@ Open.Name = "Open"
 Open.Parent = FrameMain
 Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Open.BorderSizePixel = 0
-Open.Position = UDim2.new(7.76104832, 0, 5.28586483, 0)
+Open.Position = UDim2.new(5.96306849, 0, 3.77606106, 0)
 Open.Size = UDim2.new(0, 122, 0, 50)
 Open.Font = Enum.Font.SciFi
 Open.Text = "OPEN"
@@ -172,16 +161,18 @@ Open.TextSize = 24.000
 UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(143, 5, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 11, 251))}
 UIGradient_2.Parent = Open
 
-local function REOGDN_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new("LocalScript", TextButton)
+-- Scripts:
+
+local function SXREW_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet(('https://pastebin.com/raw/xiaqAquM'),true))()
 	end)
 end
-coroutine.wrap(REOGDN_fake_script)()
-local function HSQNWOI_fake_script() -- Tab1.LocalScript 
-	local script = Instance.new("LocalScript", Tab1)
+coroutine.wrap(SXREW_fake_script)()
+local function NOOCVZ_fake_script() -- Tab1.LocalScript 
+	local script = Instance.new('LocalScript', Tab1)
 
 	script.Parent.MouseButton1Down:connect(function()
 		script.Parent.Parent.TabFMRorAFD.Visible = false
@@ -189,9 +180,9 @@ local function HSQNWOI_fake_script() -- Tab1.LocalScript
 		script.Parent.Parent.TabMadcity.Visible = true
 	end)
 end
-coroutine.wrap(HSQNWOI_fake_script)()
-local function EUETIEZ_fake_script() -- Tab2.LocalScript 
-	local script = Instance.new("LocalScript", Tab2)
+coroutine.wrap(NOOCVZ_fake_script)()
+local function KIRFYP_fake_script() -- Tab2.LocalScript 
+	local script = Instance.new('LocalScript', Tab2)
 
 	script.Parent.MouseButton1Down:connect(function()
 		script.Parent.Parent.TabFMRorAFD.Visible = true
@@ -199,9 +190,9 @@ local function EUETIEZ_fake_script() -- Tab2.LocalScript
 		script.Parent.Parent.TabMadcity.Visible = false
 	end)
 end
-coroutine.wrap(EUETIEZ_fake_script)()
-local function DOVBSD_fake_script() -- Credits.LocalScript 
-	local script = Instance.new("LocalScript", Credits)
+coroutine.wrap(KIRFYP_fake_script)()
+local function DBGCB_fake_script() -- Credits.LocalScript 
+	local script = Instance.new('LocalScript', Credits)
 
 	script.Parent.MouseButton1Down:connect(function()
 		script.Parent.Parent.TabFMRorAFD.Visible = false
@@ -209,30 +200,31 @@ local function DOVBSD_fake_script() -- Credits.LocalScript
 		script.Parent.Parent.TabMadcity.Visible = false
 	end)
 end
-coroutine.wrap(DOVBSD_fake_script)()
-local function NJPGHD_fake_script() -- TextBox.LocalScript 
-	local script = Instance.new("LocalScript", TextBox)
+coroutine.wrap(DBGCB_fake_script)()
+local function KVLVHI_fake_script() -- TextBox.LocalScript 
+	local script = Instance.new('LocalScript', TextBox)
 
 	script.Parent.MouseButton1Down:connect(function()
 		game:GetService("Players").LocalPlayer.userId = "23467579"
 	end)
 end
-coroutine.wrap(NJPGHD_fake_script)()
-local function DPBMF_fake_script() -- Close.LocalScript 
-	local script = Instance.new("LocalScript", Close)
+coroutine.wrap(KVLVHI_fake_script)()
+local function NACAY_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Down:connect(function()
 		script.Parent.Parent.Frame.Visible = false
 		script.Parent.Parent.Close.Visible = false
 	end)
 end
-coroutine.wrap(DPBMF_fake_script)()
-local function FIWXZL_fake_script() -- Open.LocalScript 
-	local script = Instance.new("LocalScript", Open)
+coroutine.wrap(NACAY_fake_script)()
+local function PIZMGU_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
 
 	script.Parent.MouseButton1Down:connect(function()
 		script.Parent.Parent.Frame.Visible = true
 		script.Parent.Parent.Close.Visible = true
 	end)
 end
-coroutine.wrap(FIWXZL_fake_script)()
+coroutine.wrap(PIZMGU_fake_script)()
+end)
