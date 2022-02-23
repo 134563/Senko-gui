@@ -1,13 +1,12 @@
 wait(1.2)
 game.StarterGui:SetCore("SendNotification", {
-	Title = "Senko Gui loading...";
-	Text = "Its loading...";
+	Title = "Senko GUI is loading...";
 	Duration = 5;
 })
 
 wait(5)
 game.StarterGui:SetCore("SendNotification", {
-	Title = "Senko Gui is Loaded";
+	Title = "Senko GUI is Loaded!";
 	Text = "Enjoy!";
 	Duration = 5;
 })
@@ -20,12 +19,16 @@ local UIGradient = Instance.new("UIGradient")
 local TextLabel = Instance.new("TextLabel")
 local TabMadcity = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
 local Tab1 = Instance.new("TextButton")
 local Tab2 = Instance.new("TextButton")
 local Credits = Instance.new("TextButton")
 local TabCredit = Instance.new("Frame")
 local TextLabel_2 = Instance.new("TextLabel")
 local Close = Instance.new("TextButton")
+local TabFnaf = Instance.new("Frame")
+local TextButton_4 = Instance.new("TextButton")
 local Open = Instance.new("TextButton")
 local UIGradient_2 = Instance.new("UIGradient")
 
@@ -53,7 +56,7 @@ TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.Size = UDim2.new(0, 496, 0, 50)
 TextLabel.Font = Enum.Font.SciFi
-TextLabel.Text = "SENKO GUI "
+TextLabel.Text = "SENKO GUI"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 29.000
 
@@ -66,12 +69,33 @@ TabMadcity.Size = UDim2.new(0, 306, 0, 199)
 
 TextButton.Parent = TabMadcity
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BorderColor3 = Color3.fromRGB(187, 11, 245)
 TextButton.Position = UDim2.new(0.055555556, 0, 0.0351758786, 0)
 TextButton.Size = UDim2.new(0, 147, 0, 50)
 TextButton.Font = Enum.Font.SciFi
 TextButton.Text = "Aimbot"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 17.000
+
+TextButton_2.Parent = TabMadcity
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BorderColor3 = Color3.fromRGB(187, 11, 245)
+TextButton_2.Position = UDim2.new(0.0555554554, 0, 0.371859282, 0)
+TextButton_2.Size = UDim2.new(0, 147, 0, 50)
+TextButton_2.Font = Enum.Font.SciFi
+TextButton_2.Text = "AutoRob"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 16.000
+
+TextButton_3.Parent = TabMadcity
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.BorderColor3 = Color3.fromRGB(187, 11, 245)
+TextButton_3.Position = UDim2.new(0.055555556, 0, 0.6934672, 0)
+TextButton_3.Size = UDim2.new(0, 147, 0, 50)
+TextButton_3.Font = Enum.Font.SciFi
+TextButton_3.Text = "Noclip"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextSize = 19.000
 
 Tab1.Name = "Tab 1"
 Tab1.Parent = Frame
@@ -91,7 +115,7 @@ Tab2.BorderSizePixel = 0
 Tab2.Position = UDim2.new(0.713709712, 0, 0.466165394, 0)
 Tab2.Size = UDim2.new(0, 124, 0, 50)
 Tab2.Font = Enum.Font.SciFi
-Tab2.Text = "Coming soon"
+Tab2.Text = "Fnaf rp"
 Tab2.TextColor3 = Color3.fromRGB(0, 0, 0)
 Tab2.TextSize = 19.000
 
@@ -110,7 +134,7 @@ TabCredit.Name = "TabCredit"
 TabCredit.Parent = Frame
 TabCredit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TabCredit.BorderSizePixel = 0
-TabCredit.Position = UDim2.new(0.0665322542, 0, 0.184210479, 0)
+TabCredit.Position = UDim2.new(0.0665322542, 0, 0.187969863, 0)
 TabCredit.Size = UDim2.new(0, 306, 0, 199)
 
 TextLabel_2.Parent = TabCredit
@@ -136,6 +160,23 @@ Close.Text = "X"
 Close.TextColor3 = Color3.fromRGB(255, 255, 255)
 Close.TextSize = 28.000
 
+TabFnaf.Name = "TabFnaf"
+TabFnaf.Parent = Frame
+TabFnaf.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TabFnaf.BorderSizePixel = 0
+TabFnaf.Position = UDim2.new(0.0665322542, 0, 0.191729307, 0)
+TabFnaf.Size = UDim2.new(0, 306, 0, 198)
+
+TextButton_4.Parent = TabFnaf
+TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.BorderColor3 = Color3.fromRGB(187, 11, 245)
+TextButton_4.Position = UDim2.new(0.055555556, 0, 0.0353535339, 0)
+TextButton_4.Size = UDim2.new(0, 123, 0, 50)
+TextButton_4.Font = Enum.Font.SciFi
+TextButton_4.Text = "All Gamepasses"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextSize = 14.000
+
 Open.Name = "Open"
 Open.Parent = ScreenGui
 Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -153,15 +194,720 @@ UIGradient_2.Parent = Open
 
 -- Scripts:
 
-local function SIFDDUY_fake_script() -- TextButton.LocalScript 
+local function XIVEC_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet(('https://pastebin.com/raw/xiaqAquM'),true))()
 	end)
 end
-coroutine.wrap(SIFDDUY_fake_script)()
-local function KYLLYZ_fake_script() -- Tab1.LocalScript 
+coroutine.wrap(XIVEC_fake_script)()
+local function MCASVDV_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	Vip = false -- Enable this if you have the VIP gamepass then you will get more money
+	
+	Movment = true -- Enables or disables player movment (by default in false to avoid bugs)
+	clear_appearance = false -- Useful when you use hide_nametag and clear_appearance together (players wont know who you are)
+	
+	hide_nametag = false -- Disables your nametag for other players (useful to avoid reports)
+	star = false -- If enabled will show a star for other players if hide nametag is on
+	
+	rob_small_things = true -- Disable this if you don't want to rob small things like: houses, stores...
+	
+	start_toggled = true
+	
+	debug_mode = false -- Enables/disables the debug mode (I use this to test things, idk if is useful for you)
+	view_invisible_parts = true -- if enabled will show invisble parts if the debug mode is on
+	show_your_nametag = false
+	
+	bank_cooldown = 500
+	nightclub_cooldown = 500
+	casino_cooldown = 500
+	
+	cant_rob = "Can't rob the %s because %s"
+	-----------------------------------------------------------------------------------------------------------------------------
+	
+	local busy = false
+	local busy_with = ""
+	local robbingBank = false
+	local robbingNightclub = false
+	local robbingCasino = false
+	local robbingJewerly = false
+	local toggled = false
+	
+	function clearAppearance()
+		if clear_appearance == true then
+			game.Players.LocalPlayer:ClearCharacterAppearance()
+		end
+	end
+	
+	function hideNametag() -- Yes, It replicates because you have the network ownership of your character. Don't fuck me saying that this isn't server sided
+		if hide_nametag == true and star == true then
+			game.Players.LocalPlayer.Character.NameTag.Title:Destroy()
+			game.Players.LocalPlayer.Character.NameTag.Script:Destroy()
+			game.Players.LocalPlayer.Character.NameTag.Icon.Rank:Destroy()
+		elseif hide_nametag == true and star == false then
+			game.Players.LocalPlayer.Character.NameTag:Destroy()
+		end
+	end
+	
+	function noclip()
+		game:GetService("RunService").Stepped:connect(function()
+			game.Players.LocalPlayer.Character.Head.CanCollide = false
+			game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
+			game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false
+		end)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.Changed:connect(function()
+			game.Players.LocalPlayer.Character.Head.CanCollide = false
+			game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
+			game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false
+		end)
+	end
+	
+	function message(msg, color)
+		local msg_color = Color3.fromRGB(0, 0, 0)
+		if color == "green" then
+			msg_color = Color3.fromRGB(84, 243, 35)
+		end
+		if color == "yellow" then
+			msg_color = Color3.fromRGB(243, 237, 46)
+		end
+		if color == "red" then
+			msg_color = Color3.fromRGB(243, 4, 4)
+		end
+		if color == "dark_red" then
+			msg_color = Color3.fromRGB(127, 2, 2)
+		end
+		if color == "blue" then
+			msg_color = Color3.fromRGB(65, 48, 255)
+		end
+		wait(0.3)
+		game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{
+			Text = msg;
+			Color = msg_color;
+			Font = Enum.Font.Cartoon;
+		})
+	end
+	
+	function toggle()
+		game.Players.LocalPlayer.Chatted:connect(function(msg)
+			if msg:lower() == "/e toggle" then
+				if toggled == false then
+					wait(1)
+					message("Starting the auto rob...", "yellow")
+					toggled = true
+					noclip()
+					hideNametag()
+					clearAppearance()
+					if Movment == false then
+						game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+						game.Players.LocalPlayer.PlayerScripts.ControlScript.Disabled = true
+					end
+					wait(0.5)
+					message("Auto rob started!", "green")
+				else
+					message("Stopping the auto rob...", "yellow")
+					message("Ending current robs...", "yellow")
+					repeat
+						wait()
+					until(busy == false and robbingBank == false and robbingNightclub == false)
+					--message("An error ocurred: the script can't stop the auto rob!", "dark_red")
+					game.Players.LocalPlayer.PlayerScripts.ControlScript.Disabled = false
+					game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+					toggled = false
+	               --[[for i = 1,10 do
+	                   wait(1)
+	                   game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(2138,25,358)
+	               end]]
+					wait(0.5)
+					game.Players.LocalPlayer.Character.Head:Destroy()
+					message("Auto rob stopped!", "red")
+				end
+			end
+		end)
+	end
+	
+	--[[function teleport(xyz)
+	for i = 1,2 do
+	       wait(3)
+	       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(xyz)
+	   end
+	end]]
+	
+	local died_fix = coroutine.create(function()
+		while wait() do
+			game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Died:Connect(function()
+				if toggled == true then
+					toggled = false
+					wait(10)
+					message("You died! Resuming the auto rob.", "yellow")
+					game.Players.LocalPlayer.PlayerScripts.ControlScript.Disabled = false
+					game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+					wait(5)
+					game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+					game.Players.LocalPlayer.PlayerScripts.ControlScript.Disabled = true
+					wait(1)
+					hideNametag()
+					clearAppearance()
+					busy = false
+					toggled = true
+					message("Auto rob successfully resumed!", "green")
+					wait(20)
+				end
+			end)
+		end
+	end)
+	
+	local debug_things = coroutine.create(function()
+		if debug_mode == true and view_invisible_parts == true then
+			for i, v in pairs(workspace:GetDescendants()) do
+				if v:IsA("Part") and v.Transparency == 1 then
+					v.Transparency = 0.3
+				end
+			end
+		end
+		if debug_mode == true and show_your_nametag == true then
+			game.Players.LocalPlayer.Character.NameTag.Enabled = true
+		end
+	end)
+	
+	local robCashRegister = coroutine.create(function()
+		while wait(5) do
+			pcall(function()
+				if toggled == true and busy == false and robbingBank == false and robbingNightclub == false then
+					for i, v in pairs(workspace.ObjectSelection:GetChildren()) do
+						if v.Name == "CashRegister" then
+							local part = v:FindFirstChildOfClass("Part")
+							if part.Name ~= "Nope" and robbingBank == false and robbingNightclub == false then
+								busy = true
+								busy_with = "robbing cash registers"
+								wait(1.5)
+								local pos = v.SmashCash.Position
+								for i = 1,5 do
+									wait(1)
+									game.Players.LocalPlayer.Character.HumanoidRootPart.Position = pos
+								end
+								wait(0.5)
+								v.SmashCash.SmashCash.Event:FireServer()
+								wait(2)
+								if part.Name == "Nope" and robbingBank == false and robbingNightclub == false then
+									busy = false   
+								end
+							end  
+						end
+					end
+				elseif debug_mode == true and busy == true then
+					print(string.format(cant_rob, "cash registers", busy_with))
+				end    
+			end)
+		end
+	end)
+	
+	local robDiamondBox = coroutine.create(function()
+		while wait(5) do
+			pcall(function()
+				if toggled == true and busy == false and robbingBank == false and robbingNightclub == false then
+					for i, v in pairs(workspace.ObjectSelection:GetChildren()) do
+						if v.Name == "DiamondBox" then
+							local part = v:FindFirstChildOfClass("Part")
+							if part.Name ~= "Nope" and robbingBank == false and robbingNightclub == false then
+								busy = true
+								busy_with = "robbing diamond boxes"
+								wait(1.5)
+								local pos = v.SmashCash.Position
+								for i = 1,5 do
+									wait(1)
+									game.Players.LocalPlayer.Character.HumanoidRootPart.Position = pos
+								end
+								wait(0.3)
+								v.SmashCash.SmashCash.Event:FireServer()
+								wait(2)
+								if part.Name ~= "Nope" and robbingBank == false and robbingNightclub == false then
+	
+								else
+									busy = false
+								end
+							end  
+						end
+					end
+				elseif debug_mode == true and busy == true then
+					print(string.format(cant_rob, "diamond boxes", busy_with))
+				end    
+			end)
+		end
+	end)
+	
+	local robSafe = coroutine.create(function()
+		while wait(5) do
+			pcall(function()
+				if toggled == true and busy == false and robbingBank == false and robbingNightclub == false then
+					for i, v in pairs(workspace.ObjectSelection:GetChildren()) do
+						if v.Name == "Safe" then
+							local part = v:FindFirstChildOfClass("Part")
+							if part.Name ~= "Nope" and robbingBank == false and robbingNightclub == false then
+								busy = true
+								busy_with = "robbing safes"
+								wait(5)
+								local pos = v.SmashCash.Position
+								for i = 1,10 do
+									wait(0.3)
+									game.Players.LocalPlayer.Character.HumanoidRootPart.Position = pos
+								end
+								wait(0.3)
+								v.SmashCash.SmashCash.Event:FireServer()
+								wait(2)
+								if part.Name ~= "Nope" and robbingBank == false and robbingNightclub == false then
+	
+								else
+									busy = false
+								end
+							end  
+						end
+					end
+				elseif debug_mode == true and busy == true then
+					print(string.format(cant_rob, "safes", busy_with))
+				end    
+			end)
+		end
+	end)
+	
+	local robTipJar = coroutine.create(function()
+		while wait(5) do
+			pcall(function()
+				if toggled == true and busy == false and robbingBank == false and robbingNightclub == false then
+					for i, v in pairs(workspace.ObjectSelection:GetChildren()) do
+						if v.Name == "TipJar" then
+							local part = v:FindFirstChildOfClass("Part")
+							if part.Name == "SmashCash" and robbingBank == false and robbingNightclub == false then
+								busy = true
+								busy_with = "robbing tip jars"
+								local pos = v.SmashCash.Position
+								for i = 1,5 do
+									wait(1)
+									game.Players.LocalPlayer.Character.HumanoidRootPart.Position = pos
+								end
+								wait(0.3)
+								v.SmashCash.SmashCash.Event:FireServer()
+								wait(2)
+								if part.Name == "SmashCash" and robbingBank == false and robbingNightclub == false then
+	
+								else
+									busy = false
+								end
+							end  
+						end
+					end
+				elseif debug_mode == true and busy == true then
+					print(string.format(cant_rob, "tip jars", busy_with))
+				end    
+			end)
+		end
+	end)
+	
+	local robLuggage = coroutine.create(function()
+		while wait(5) do
+			pcall(function()
+				if toggled == true and busy == false and robbingBank == false and robbingNightclub == false then
+					for i, v in pairs(workspace.ObjectSelection:GetChildren()) do
+						if v.Name == "Luggage" then
+							local part = v:FindFirstChildOfClass("Part")
+							if part.Name ~= "Nope" and robbingBank == false and robbingNightclub == false then
+								busy = true
+								busy_with = "robbing luggage"
+								wait(1.5)
+								local pos = v.SmashCash.Position
+								for i = 1,5 do
+									wait(1)
+									game.Players.LocalPlayer.Character.HumanoidRootPart.Position = pos
+								end
+								wait(0.5)
+								v.SmashCash.SmashCash.Event:FireServer()
+								wait(2)
+								if part.Name == "Nope" and robbingBank == false and robbingNightclub == false then
+									busy = false   
+								end
+							end  
+						end
+					end
+				elseif debug_mode == true and busy == true then
+					print(string.format(cant_rob, "cash registers", busy_with))
+				end    
+			end)
+		end
+	end)
+	
+	local robCash = coroutine.create(function()
+		while wait(5) do
+			wait()
+			pcall(function()
+				if toggled == true and busy == false and robbingBank == false and robbingNightclub == false then
+					for i, v in pairs(workspace.ObjectSelection:GetChildren()) do
+						if v.Name == "Cash" then
+							local part = v:FindFirstChildOfClass("MeshPart")
+							if part.Name == "Cash" and robbingBank == false and robbingNightclub == false then
+								busy = true
+								busy_with = "robbing cash"
+								local pos = v.Cash.Position
+								for i = 1,10 do
+									wait(0.3)
+									game.Players.LocalPlayer.Character.HumanoidRootPart.Position = pos
+								end
+								wait(0.3)
+								v.Cash.Cash.Event:FireServer()
+								wait(2)
+								if part.Name == "Cash" and robbingBank == false and robbingNightclub == false then
+	
+								else
+									busy = false
+								end
+							end  
+						end
+					end
+				elseif debug_mode == true and busy == true then
+					print(string.format(cant_rob, "cash", busy_with))
+				end    
+			end)
+		end
+	end)
+	
+	local robTv = coroutine.create(function()
+		while wait(5) do
+			pcall(function()
+				if toggled == true and busy == false and robbingBank == false and robbingNightclub == false then
+					for i, v in pairs(workspace.ObjectSelection:GetChildren()) do
+						if v.Name == "TV" then
+							local part = v:FindFirstChildOfClass("Part")
+							if part.Name ~= "Nope" and robbingBank == false and robbingNightclub == false then
+								busy = true
+								busy_with = "robbing TVs"
+								wait(3)
+								local pos = v.StealTV.Position
+								for i = 1,5 do
+									wait(1)
+									game.Players.LocalPlayer.Character.HumanoidRootPart.Position = pos
+								end
+								wait(0.3)
+								v.StealTV.StealTV.Event:FireServer()
+								wait(2)
+								if part.Name ~= "Nope" and robbingBank == false and robbingNightclub == false then
+	
+								else
+									busy = false
+								end
+							end  
+						end
+					end
+				elseif debug_mode == true and busy == true then
+					print(string.format(cant_rob, "TVs", busy_with))
+				end    
+			end)
+		end
+	end)
+	
+	local robAtm = coroutine.create(function()
+		while wait(5) do
+			pcall(function()
+				if toggled == true and busy == false and robbingBank == false and robbingNightclub == false then
+					for i, v in pairs(workspace.ObjectSelection:GetChildren()) do
+						if v.Name == "ATM" then
+							local part = v:FindFirstChildOfClass("Part")
+							if part.Name ~= "Nope" and robbingBank == false and robbingNightclub == false then
+								busy = true
+								busy_with = "robbing ATMs" 
+								wait(1.5)
+								local pos = v.ATM.Position
+								for i = 1,5 do
+									wait(1)
+									game.Players.LocalPlayer.Character.HumanoidRootPart.Position = pos
+								end
+								wait(0.3)
+								v.ATM.ATM.Event:FireServer()
+								wait(2)
+								if part.Name ~= "Nope" and robbingBank == false and robbingNightclub == false then
+	
+								else
+									busy = false
+								end
+							end  
+						end
+					end
+				elseif debug_mode == true and busy == true then
+					print(string.format(cant_rob, "ATMs", busy_with))
+				end    
+			end)
+		end
+	end)
+	
+	local robSlotmachine = coroutine.create(function()
+		while wait(5) do
+			pcall(function()
+				if toggled == true and busy == false and robbingBank == false and robbingNightclub == false then
+					for i, v in pairs(workspace.ObjectSelection:GetChildren()) do
+						if v.Name == "SlotMachine" then
+							local part = v:FindFirstChildOfClass("Part")
+							if part.Name ~= "Nope" and part.name == "SlotMachine" and robbingBank == false and robbingNightclub == false then
+								busy = true
+								busy_with = "robbing slot machines"
+								wait(1.5)
+								local pos = v.SlotMachine.Position
+								for i = 1, 1,5 do
+									wait(1)
+									game.Players.LocalPlayer.Character.HumanoidRootPart.Position = pos
+								end
+								wait(0.5)
+								v.SlotMachine.SlotMachine.Event:FireServer()
+								wait(2)
+								if part.Name ~= "Nope" and robbingBank == false and robbingNightclub == false then  
+								else
+									busy = false
+								end
+							end  
+						end
+					end
+				elseif debug_mode == true and busy == true then
+					print(string.format(cant_rob, "slot machines", busy_with))
+				end    
+			end)
+		end
+	end)
+	
+	local robBank = coroutine.create(function()
+		while wait(2) do
+			pcall(function()
+				if toggled == true and game.ReplicatedStorage.HeistStatus.Bank.Locked.Value == false and robbingNightclub == false then
+					robbingBank = true
+					busy = true
+					busy_with = "robbing bank"
+					if debug_mode == true then
+						warn("All robs have been paused to rob the bank")
+					end
+					wait(5)
+	  --[[for i, v in pairs (workspace.ObjectSelection:GetChildren()) do
+	  if v.Name == "HackComputer" then
+	  for i = 1,10 do
+	                          wait(1.5)
+	                          game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(636.778, 27.5895, 529.505)
+	                          v.HackComputer.HackComputer.Event:FireServer()
+	  end
+	  v.HackComputer.HackComputer.Event:FireServer()
+	  wait(1)
+	  v.HackComputer.HackComputer.Event:FireServer()
+	  wait(1.5)
+	  return
+	  end
+	  wait(3)
+	  break
+	end]]
+					for i = 1,5 do
+						wait(1.5)
+						game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(739,0,488)
+					end
+					wait(.5)
+					local pos = workspace.Bank.MoneyBags["Money Bag"].Position
+					for i = 1,5 do
+						wait(1.5)
+						game.Players.LocalPlayer.Character.HumanoidRootPart.Position = pos
+					end
+					if Vip == false then
+						repeat
+							wait()
+						until game.Players.LocalPlayer.PlayerGui.MainGUI.StatsHUD.CashBagHUD.Cash.Amount.Text == "$3000"
+					else
+						repeat
+							wait()
+						until game.Players.LocalPlayer.PlayerGui.MainGUI.StatsHUD.CashBagHUD.Cash.Amount.Text == "$6000"
+					end
+	
+					for i = 1,5 do
+						wait(1.5)
+						game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(2034, 25, 447)
+					end
+					robbingBank = false
+					busy = false
+					wait(bank_cooldown)
+				elseif debug_mode == true and busy == true then
+					warn(string.format(cant_rob, "bank", "it's closed"))
+				end
+			end)
+		end
+	end)
+	
+	local robNightclub = coroutine.create(function()
+		while wait(1) do
+			pcall(function()
+				if toggled == true and game.ReplicatedStorage.HeistStatus.Club.Locked.Value == false and robbingNightclub == false then
+					robbingNightclub = true
+					busy = true
+					busy_with = "robbing night club"
+					wait(5)
+					if debug_mode == true then
+						warn("All robs have been paused to rob the night club")
+					end
+					for i = 1,5 do
+						wait(3)
+						game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(1362,42,-153)
+					end
+					wait(3)
+					for i = 1,5 do
+						wait(2)
+						game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(1349,142,-100)
+					end
+					wait(0.3)
+					for i, v in pairs(workspace.ObjectSelection.HackKeyPad:GetChildren()) do
+						if v.Name == "HackKeyPad" then
+							v.HackKeyPad.Event:FireServer()
+						end
+					end
+					wait(3)
+					for i = 1,5 do
+						wait(2)
+						game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(1361,142,-155)
+					end
+					if Vip == false then
+						repeat
+							wait()
+						until game.Players.LocalPlayer.PlayerGui.MainGUI.StatsHUD.CashBagHUD.Cash.Amount.Text == "$6000"
+					else
+						repeat
+							wait()
+						until game.Players.LocalPlayer.PlayerGui.MainGUI.StatsHUD.CashBagHUD.Cash.Amount.Text == "$12000"
+					end
+					for i = 1,10 do
+						wait(1)
+						game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(2034, 25, 447)
+					end
+					robbingNightclub = false
+					busy = false
+					wait(nightclub_cooldown)
+				elseif debug_mode == true and game.ReplicatedStorage.HeistStatus.Club.Locked.Value == true then
+					warn(string.format(cant_rob, "night club", "it's closed"))
+				end
+			end)
+		end
+	end)
+	
+	local robCasino = coroutine.create(function()
+		while wait(1) do
+			pcall(function()
+				if game.ReplicatedStorage.HeistStatus.Casino.Locked.Value == false then
+					robbingCasino = true
+					busy = true
+					busy_with = "robbing casino"
+	  --[[for i, v in pairs (workspace.ObjectSelection:GetChildren()) do
+	  if v.Name == "HackComputer" then
+	  for i = 1,10 do
+	                          wait(1.5)
+	                          game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(636.778, 27.5895, 529.505)
+	                          v.HackComputer.HackComputer.Event:FireServer()
+	  end
+	  v.HackComputer.HackComputer.Event:FireServer()
+	  wait(1)
+	  v.HackComputer.HackComputer.Event:FireServer()
+	  wait(1.5)
+	  return
+	  end
+	  wait(15)
+	  break
+	   end]]
+					if debug_mode == true then
+						warn("All robs have been paused to rob the casino")
+					end
+	
+					wait(5)
+					for i = 1,10 do
+						wait(0.5)
+						game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(1646,142,-155)
+					end
+					wait(35)
+					for i = 1,10 do
+						wait(0.5)
+						game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(2034, 25, 447)
+					end
+					robbingCasino = false
+					busy = false
+					wait(casino_cooldown)
+				else
+					warn(string.format(cant_rob, "casino", "it's closed"))
+				end
+			end)
+		end
+	end)
+	
+	
+	coroutine.resume(died_fix)
+	--coroutine.resume(busy_fix)
+	coroutine.resume(debug_things)
+	
+	coroutine.resume(robNightclub)
+	coroutine.resume(robBank)
+	
+	if rob_small_things == true then
+		coroutine.resume(robCashRegister)
+		coroutine.resume(robDiamondBox)
+		coroutine.resume(robSafe)
+		coroutine.resume(robTipJar)
+		coroutine.resume(robLuggage)
+	
+		coroutine.resume(robCash)
+		coroutine.resume(robTv)
+		coroutine.resume(robAtm)
+		coroutine.resume(robSlotmachine)
+	end
+	
+	if start_toggled == true then
+		message("Thanks for using GoldGowd's Autorob!", "blue")
+		message("Starting...", "yellow")
+		noclip()
+		hideNametag()
+		clearAppearance()
+		toggle()
+		toggled = true
+		message("Starting...")
+	else
+		message("Thanks for using GoldGowd's Autorob!\n\nTo start/stop use \"/e toggle\"", "blue")
+		toggle()
+	end
+end
+coroutine.wrap(MCASVDV_fake_script)()
+local function AUYQEPK_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	--[[
+	    Made by GoldGowd!
+	--]]
+	
+	local player = game.Players.LocalPlayer
+	local mouse = player:GetMouse()
+	local runservice = game:GetService("RunService")
+	local noclip = false
+	
+	local msg = Instance.new("Message", player.PlayerGui)
+	msg.Text = "Noclip Script by GoldGowd! Press on 'e' to noclip & 't' to destroy this message!"
+	
+	runservice.Stepped:Connect(function()
+		if noclip then
+			player.Character.Humanoid:ChangeState(11)
+		end
+	end)
+	
+	mouse.KeyDown:Connect(function(key)
+		if key == "t" then
+			msg:Destroy()
+		end
+	end)
+	
+	mouse.KeyDown:Connect(function(key)
+		if key == "e" then
+			noclip = true
+			player.Character.Humanoid:ChangeState(11)
+		end
+	end)
+end
+coroutine.wrap(AUYQEPK_fake_script)()
+local function TABMVC_fake_script() -- Tab1.LocalScript 
 	local script = Instance.new('LocalScript', Tab1)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -169,8 +915,18 @@ local function KYLLYZ_fake_script() -- Tab1.LocalScript
 		script.Parent.Parent.TabMadcity.Visible = true
 	end)
 end
-coroutine.wrap(KYLLYZ_fake_script)()
-local function XQCY_fake_script() -- Credits.LocalScript 
+coroutine.wrap(TABMVC_fake_script)()
+local function NTUUN_fake_script() -- Tab2.LocalScript 
+	local script = Instance.new('LocalScript', Tab2)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.TabCredit.Visible = false
+		script.Parent.Parent.TabMadcity.Visible = false
+		script.Parent.Parent.TabFnaf.Visible = true
+	end)
+end
+coroutine.wrap(NTUUN_fake_script)()
+local function CEYH_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -178,16 +934,24 @@ local function XQCY_fake_script() -- Credits.LocalScript
 		script.Parent.Parent.TabMadcity.Visible = false
 	end)
 end
-coroutine.wrap(XQCY_fake_script)()
-local function KQKH_fake_script() -- Close.LocalScript 
+coroutine.wrap(CEYH_fake_script)()
+local function LHZM_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(KQKH_fake_script)()
-local function CONZG_fake_script() -- Open.LocalScript 
+coroutine.wrap(LHZM_fake_script)()
+local function EEVGZRY_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Players").LocalPlayer.userId = "23467579"
+	end)
+end
+coroutine.wrap(EEVGZRY_fake_script)()
+local function JAWCEJ_fake_script() -- Open.LocalScript 
 	local script = Instance.new('LocalScript', Open)
 
 	local frame = script.Parent.Parent.Frame
@@ -200,4 +964,4 @@ local function CONZG_fake_script() -- Open.LocalScript
 	end)
 	
 end
-coroutine.wrap(CONZG_fake_script)()
+coroutine.wrap(JAWCEJ_fake_script)()
