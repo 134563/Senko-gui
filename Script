@@ -1,6 +1,6 @@
 wait(1.2)
 game.StarterGui:SetCore("SendNotification", {
-	Title = "Senko GUI is loading...";
+	Title = "Senko GUI is Loading...";
 	Duration = 5;
 })
 
